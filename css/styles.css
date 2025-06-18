@@ -265,7 +265,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  max-width: 1440px;
+  max-width: 320px;
 }
 @media screen and (min-resolution: 2x) {
   .hero {
@@ -275,6 +275,62 @@ a {
       ),
       url(../images/hero-mob@2x-min.jpg);
   }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-color: #2e2f42;
+    margin: 0 auto;
+    padding: 72 auto;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-tab-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 768px;
+  }
+  @media screen and (min-resolution: 2x) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-tab@2x-min.jpg);
+    }
+  }
+}
+@media screen and (min-width: 1158px) {
+  .hero {
+    background-color: #2e2f42;
+    margin: 0 auto;
+    padding: 72 auto;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-desc-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 1440px;
+  }
+  @media screen and (min-resolution: 2x) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-desc@2x-min.jpg);
+    }
+  }
+}
+.hero-container {
+  max-width: 320px;
+  width: 100%;
+  padding: 72px 52px;
+  margin: 0 auto;
 }
 .hero-title {
   font-size: 36px;
@@ -293,7 +349,8 @@ a {
   background-color: #4d5ae5;
   cursor: pointer;
   display: block;
-  margin: 72px auto;
+  margin: 0 auto;
+  margin-top: 72px;
   border: none;
   border-radius: 4px;
   padding: 16px 32px;
@@ -304,7 +361,40 @@ a {
 .hero-btn:focus {
   background: #404bbf;
 }
-
+@media screen and (min-width: 768px) {
+  .hero-container {
+    max-width: 768px;
+    width: 100%;
+    padding: 112px 136px;
+    margin: 0 auto;
+  }
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.08;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    max-width: 496px;
+  }
+  .hero-btn {
+    margin-top: 36px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .hero-container {
+    max-width: 1158px;
+    width: 100%;
+    padding: 188px 0;
+    margin: 0 auto;
+  }
+  .hero-title {
+    margin: 0 auto 48px;
+    text-transform: capitalize;
+  }
+  .hero-btn {
+    margin-top: 48px;
+  }
+}
 /* features */
 .features {
   padding-top: 96px;
@@ -355,10 +445,71 @@ a {
   height: 112px;
 }
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
+  .features-list {
+    column-gap: 24px;
+    row-gap: 72px;
   }
   .features-item {
     width: calc((100% - 24px) / 2);
   }
+}
+@media screen and (min-width: 1158px) {
+  .features {
+    padding: 120px 0;
+  }
+  .features-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .features-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+  }
+  .features-item {
+    width: calc((100% - 72px) / 4);
+  }
+  .features-item-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
+  .features-wrap-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    height: 112px;
+  }
+}
+/* team */
+.team {
+  background: #f4f4fd;
+  padding: 96px 0;
+}
+
+.team-item {
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  /* width: calc((100% - 72px) / 4); */
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.team-container {
+  padding: 32px 0px;
+}
+.team-title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
 }

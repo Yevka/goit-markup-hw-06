@@ -1,5 +1,5 @@
 /* =========body============== */
-/* body {
+body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #fff;
@@ -34,8 +34,7 @@ a {
 }
 
 .container {
-  max-width: 320px;
-  width: 100%;
+  max-width: 1158px;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
@@ -190,15 +189,11 @@ a {
 /* ============features=========== */
 .features {
   padding: 120px 0;
-  padding-top: 96px;
-  padding-bottom: 96px;
 }
 .features-list {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   gap: 24px;
-  gap: 72px;
 }
 .visually-hidden {
   position: absolute;
@@ -218,18 +213,11 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
   margin-bottom: 8px;
 }
 
 .features-item {
   width: calc((100% - 72px) / 4);
-  width: 100%;
 }
 
 .features-item-text {
@@ -238,9 +226,8 @@ a {
   letter-spacing: 0.02em;
   color: #434455;
 }
-.features-wrap-icon {
+.wrap-icon {
   display: flex;
-  display: none;
   justify-content: center;
   align-items: center;
   background-color: #f4f4fd;
@@ -702,19 +689,4 @@ a {
 }
 .modal-chekbox-link {
   color: #4d5ae5;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  .features {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
-  .features-item {
-    width: calc((100% - 24px) / 2);
-  }
 }
