@@ -940,8 +940,6 @@ a {
   .footer-subscribe {
     margin-top: 0;
     margin-left: 80px;
-    /* align-items: center;
-    justify-content: center; */
   }
 
   .footer-logo-text {
@@ -990,8 +988,8 @@ a {
   transform: translate(-50%, -100%);
 }
 .modal {
-  min-height: 584px;
-  width: 408px;
+  min-height: 623px;
+  width: 288px;
   border-radius: 4px;
   background-color: #fcfcfc;
   position: absolute;
@@ -999,7 +997,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 72px 24px 24px;
+  padding: 72px 16px 24px 16px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
 }
@@ -1124,7 +1122,9 @@ a {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+/* .check-accept {
+  min-width: 256px;
+} */
 .check-element {
   display: inline-flex;
   align-items: center;
@@ -1156,3 +1156,19 @@ a {
 .modal-chekbox-link {
   color: #4d5ae5;
 }
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .modal {
+    min-height: 584px;
+    width: 408px;
+    padding: 72px 24px 24px 24px;
+  }
+}
+/* @media screen and (min-width: 1158px) {
+  .modal {
+    min-height: 584px;
+    width: 408px;
+  }
+} */
