@@ -748,12 +748,19 @@ a {
 /* Footer */
 .page-footer {
   background-color: #2e2f42;
-  padding: 96px 0;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .footer-logo {
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   margin-bottom: 16px;
 }
 .footer-logo .logo-part {
@@ -767,7 +774,7 @@ a {
   width: 288px;
 }
 .footer-wrap-text {
-  max-width: 288px;
+  /* max-width: 288px; */
   margin-bottom: 72px;
 }
 .footer-icon-list {
@@ -795,7 +802,7 @@ a {
 }
 
 .footer-subscribe {
-  margin-left: 80px;
+  margin-top: 72px;
 }
 
 .footer-logo-text {
@@ -808,4 +815,77 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+}
+.subscribe-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* gap: 16px; */
+}
+.subscribe-input {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  outline: transparent;
+  width: 288px;
+  height: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 8px 16px;
+}
+
+.subscribe-input::placeholder {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.subscribe-input:focus {
+  border-color: #4d5ae5;
+}
+
+.subscribe-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 165px;
+  height: 40px;
+  padding: 8px 24px;
+  margin-top: 16px;
+}
+
+.subscribe-icon {
+  fill: #fff;
+  /* margin-left: 16px; */
+}
+@media screen and (min-width: 768px) {
+  .footer-container {
+    max-width: 768px;
+    /* padding-left: 108px;
+    padding-right: 164px; */
+    row-gap: 72px;
+    column-gap: 24px;
+    justify-content: start;
+    align-items: baseline;
+  }
+  .footer-wrap-text {
+    margin: 0 auto;
+  }
+  /* .footer-logo {
+    text-align: start;
+  } */
+
+  .subscribe-form {
+    justify-content: center;
+    gap: 24px;
+  }
+  .footer-subscribe {
+    margin-top: 72px;
+    gap: 24px;
+  }
 }
