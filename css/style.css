@@ -735,7 +735,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  row-gap: 48px;
+  row-gap: 72px;
 }
 .portfolio-container {
   padding: 32px 16px;
@@ -778,7 +778,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .portfolio-list {
-    row-gap: 72px;
+    row-gap: 64px;
     column-gap: 24px;
   }
   .portfolio-item {
