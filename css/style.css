@@ -368,10 +368,7 @@ a {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-tab-min.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    max-width: 768px;
+    max-width: 800px;
   }
   @media screen and (min-resolution: 2x) {
     .hero {
@@ -390,9 +387,6 @@ a {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-desc-min.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     max-width: 1440px;
   }
   @media screen and (min-resolution: 2x) {
@@ -407,17 +401,19 @@ a {
 }
 .hero-container {
   max-width: 320px;
-  width: 100%;
   padding: 72px 52px;
   margin: 0 auto;
 }
 .hero-title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #fff;
   max-width: 216px;
+  width: 100%;
 }
 .hero-btn {
   font-weight: 500;
@@ -443,11 +439,13 @@ a {
 @media screen and (min-width: 768px) {
   .hero-container {
     max-width: 768px;
-    width: 100%;
     padding: 112px 136px;
     margin: 0 auto;
   }
   .hero-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     font-size: 56px;
     line-height: 1.08;
     letter-spacing: 0.02em;
@@ -462,11 +460,11 @@ a {
 @media screen and (min-width: 1158px) {
   .hero-container {
     max-width: 1158px;
-    width: 100%;
     padding: 188px 0;
     margin: 0 auto;
   }
   .hero-title {
+    width: 100%;
     margin: 0 auto 48px;
     text-transform: capitalize;
   }
@@ -500,7 +498,7 @@ a {
 .features-item {
   width: 100%;
 }
-.features-subtitl {
+.features-subtitle {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
