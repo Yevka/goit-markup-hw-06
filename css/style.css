@@ -834,8 +834,6 @@ a {
   align-items: center;
 }
 .footer-logo {
-  display: flex;
-  justify-content: center;
   text-align: center;
   margin-bottom: 16px;
 }
@@ -895,7 +893,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* gap: 16px; */
+  gap: 16px;
 }
 .subscribe-input {
   font-size: 12px;
@@ -936,11 +934,10 @@ a {
 
 .subscribe-icon {
   fill: #fff;
-  /* margin-left: 16px; */
+  margin-left: 16px;
 }
 @media screen and (min-width: 768px) {
   .footer-container {
-    max-width: 768px;
     column-gap: 24px;
     row-gap: 72px;
     justify-content: start;
@@ -968,7 +965,7 @@ a {
     max-width: 264px;
   }
   .footer-subscribe {
-    margin-top: 72px;
+    margin-top: 0;
     gap: 24px;
   }
   .subscribe-btn {
