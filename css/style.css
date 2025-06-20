@@ -834,6 +834,8 @@ a {
   align-items: center;
 }
 .footer-logo {
+  display: flex;
+  justify-content: center;
   text-align: center;
   margin-bottom: 16px;
 }
@@ -893,7 +895,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 16px;
 }
 .subscribe-input {
   font-size: 12px;
